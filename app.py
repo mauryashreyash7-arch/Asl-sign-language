@@ -10,7 +10,7 @@ assert os.path.exists("keras_model.h5"), "Model file not found!"
 assert os.path.exists("labels.txt"), "Labels file not found!"
 
 # Initialize camera and modules
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 detector = HandDetector(maxHands=1)
 classifier = Classifier("keras_model.h5", "labels.txt")
 
@@ -135,3 +135,4 @@ finally:
     cap.release()
     cv2.destroyAllWindows()
     print("Program ended successfully")
+
