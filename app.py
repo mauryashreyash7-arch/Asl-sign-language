@@ -231,3 +231,4 @@ finally:
     cap.release()
     cv2.destroyAllWindows()
     print("Program ended successfully")
+
